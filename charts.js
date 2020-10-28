@@ -1,5 +1,9 @@
 const charts = []
 
+const tooltip = {
+  backgroundColor: '#fff'
+}
+
 const dataLabels = {
   enabled: true,
   crop: false,
@@ -124,11 +128,11 @@ charts.push({
     xAxis: {
       categories: ['0-3', '3-7', '7-10', '10-14', '14-17', '17-21', '21-24', '24-27'],
       title: {
-        text: 'Job titles'
+        text: 'Years of experience'
       }
     },
     series: [{
-        name: 'Years of experience',
+        name: 'Responses',
         data: [
           42,33,25,7,8,3,2,1
         ]
@@ -507,7 +511,7 @@ charts.push({
       },
       // min: 0,
       // max: 40,
-      tickInterval: 1000
+      tickInterval: 5000
     },
 
     series: [{
@@ -1479,4 +1483,4 @@ charts.push({
 //   }
 // })
 
-charts.forEach(({c,d}) => Highcharts.chart(c, d))
+charts.forEach(({c,d}) => Highcharts.chart(c, {...d, tooltip}))
