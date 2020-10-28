@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Lora|Open+Sans&display=swap');
+
+:root {
+  --main-padding: 4em;
+  --lightGray: #fff;
+  --headingColor: linear-gradient(to right,#C33764,#1D2671)
+}
+
+body, html{
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  color: #224;
+  font-size: 1.2em;
+}
+
+main, footer{
+  max-width: 55em;
+  padding: 0 var(--main-padding);
+}
+
+h1, h2, h3,h4{
+  font-family: 'Lora', serif;
+}
+
+h2{
+  margin-left: calc(-1*var(--main-padding));
+  padding: 0.5em 0.5em 0.5em var(--main-padding);
+  border-top:5px solid #1D2671;
+  border-right:5px solid #1D2671;
+  /* border-radius:300px; */
+  font-size: 35px;
+  margin-top:2em;
+  /* box-shadow: 1em 1em 1em rgb(105, 182, 190, 0.5); */
+}
+
+h3{
+  font-size: 40px;
+  background: var(--headingColor);
+  display: block;
+  font-weight: ligher;
+  margin-left: calc(-1*var(--main-padding));
+  padding: 0.5em 0.5em 0.5em var(--main-padding);
+  color:#fff;
+}
+
+h3:before{
+  content: '▸ '
+}
+
+p{
+
+  line-height: 1.5em;
+}
+
+footer{
+  padding-top:2em;
+  padding-bottom:2em;
+  background: #eaeaea;
+}
+
+.copyright{
+  font-family: 'Lora', serif;
+  font-size: 0.8em;
+}
+
+.chart{
+  max-width: 600px;
+  margin:3em 0;
+  border:1px solid var(--lightGray);
+}
+.chart.full{
+  max-width:100%;
+}
+
+.column-list{
+  column-count: 3;
+}
+
+table{
+  margin:0;
+  border-collapse: collapse;
+  margin-bottom:1em;
+}
+td{
+  border:1px solid var(--lightGray);
+  padding:0.1em 0.5em;
+}
+
+thead td{
+  border:0px;
+  padding-bottom:0.1em;
+}
+
+@media screen and (max-width:640px){
+  :root {
+    --main-padding: 1em;
+  }
+
+  h3{
+    font-size: 30px;
+    display: block;
+    margin-left: -1em;
+    padding:0 0 0 1em;
+  }
+  h3:before{
+    display:none;
+  }
+  .column-list{
+    column-count: 1;
+  }
+}
