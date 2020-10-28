@@ -117,7 +117,7 @@ charts.push({
         text: 'Overall Experience'
     },
     subtitle: {
-      text: 'Bucketed by 3 year'
+      text: 'Bucketed by 3 years'
   },
     yAxis: {
         title: {
@@ -199,7 +199,7 @@ charts.push({
     },
 
     title: {
-      text: 'Total Compensation'
+      text: 'Cash Compensation (aka Salary)'
     },
 
     legend: {
@@ -315,7 +315,7 @@ charts.push({
           text: 'Salary by Experience'
       },
       subtitle: {
-          text: 'Grouped by gender'
+          text: 'Grouped by year'
       },
       xAxis: {
           title: {
@@ -765,7 +765,7 @@ charts.push({
         text: 'Salary by Experience'
     },
     subtitle: {
-        text: 'Grouped by gender'
+        text: 'Grouped by education'
     },
     xAxis: {
         title: {
@@ -1163,9 +1163,9 @@ charts.push({
         lineWidth: 1,
         lineColor: "rgba(255,0,0,1)"
       },
-      tooltip: {
-        pointFormat: '{point.y} Percent'
-      }
+      // tooltip: {
+      //   pointFormat: '{point.y} Percent'
+      // }
     }, {
       name: 'Outlier',
       type: 'scatter',

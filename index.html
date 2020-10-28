@@ -28,7 +28,7 @@
   <body>
     <main>
       <h1><img src="logo.png" alt="" width="30"> 2020 UtahJS Survey Results</h1>
-      <p>In October of 2020, a survey of UtahJS members was conducted through the group's slack channel around the topics of pay and education. Presented here are an analysis of the results, as well as some commentary, and a link to the raw result data.</p>
+      <p>In October of 2020, a survey of UtahJS members was conducted through the group's slack channel around the topics of compensation, education, Covid-19, and other issues. Presented here are an analysis of the results, as well as some commentary, and a link to the raw result data.</p>
       <p>Jump To:</p>
       <ul>
         <li><a href="#demographics">Demographics</a></li>
@@ -47,7 +47,7 @@
 
       <h2 id="demographics">Demographics</h2>
       <h3>I would consider myself a...</h3>
-      <p>This year members were asked to bucket themselves in to job-titles, such as "Junior Developer" or "HR Manager"</p>
+      <p>This year, members were asked to bucket themselves in to job-titles, such as "Junior Developer" or "Engineering Manager"</p>
 
       <div id="job-titles-chart" class="chart"></div>
 
@@ -63,7 +63,7 @@
       <p>Some observations:</p>
       <ul>
         <li>Despite the appearance of the chart, there aren't any statstical outliers in the senior category. There's a smooth distribution between 10 and 25 years.</li>
-        <li>Title inflation: the highest-experience "junior engineer" has more experience than the lowest-experience "senior engineer." It's my opinion that the first two quartiles of "senior engineer" may not be describing themselves accuratly. </li>
+        <li>Title inflation: the highest-experience "junior engineer" has more experience than the lowest-experience "senior engineer." It's my opinion that the first two quartiles of "senior engineer" may not be describing themselves accurately. </li>
       </ul>
 
       <h3>What are the experience levels for all of the survey respondents?</h3>
@@ -90,7 +90,7 @@
       <h3>Cash Compensation aka Salary</h3>
 
       <div id="total-comp-with-nones" class="chart"></div>
-      <p>Curriously, no "0" responses were entered this year, which usually happens with students, new graduates, unemployed.</p>
+      <p>Curriously, no "0" responses were entered this year, which usually happens with students, new graduates, or unemployed people responding to the survey.</p>
 
       <h3>How does compensation change with experience?</h3>
       <div id="total-comp-by-experience" class="chart full"></div>
@@ -98,7 +98,7 @@
       <div id="comp-comparison" class="chart full"></div>
       <p>Tip: Hover over each year to highlight them individually</p>
 
-      <h3>Total Comp (sum of salary, bonuses, and equity</h3>
+      <h3>Total Comp (sum of salary, bonuses, and equity)</h3>
       <p>68 of 122 respondents (55%) received either a cash bonus, liquid equity, or both</p>
       <p>Comparison: in 2019, 37%  received a bonus or equity.</p>
       <div id="received-non-cash" class="chart"></div>
@@ -116,7 +116,7 @@
       <div id="comp-by-title" class="chart"></div>
       <h2 id="education">Education</h2>
       <h3>What is the distribution of education types?</h3>
-      <p>Survey respondents could multiple options from:</p>
+      <p>Survey respondents could choose multiple options from:</p>
       <ul>
         <li>Self Taught</li>
         <li>Bootcamp</li>
@@ -124,9 +124,9 @@
         <li>Graduate Degree</li>
       </ul>
       <img src="edu-breakdown.png" width="500" alt="education breakdown graphic"/>
-      <p>Note: couldn't find a javascript powered chart to describe this sort of multiple-select question. So you get my poor photoshop chart for this one!</p>
+      <p>Note: couldn't find a JavaScript powered chart to describe this sort of multiple-select question. So you get my poor photoshop chart for this one!</p>
       <h3>Do different education types have different compensation distributions?</h3>
-      <p>In this space, I've usually had a box plot showing the difference in compensation between, say, Bootcamp grads and Bachelor's Degree holders. After seeing several years of data, I now believe that this variation is mostly explianed by experience. As time goes on, and the selection bias continues to work against bootcamp grads, I believe those that continue in their career will have comp on-par with their peers.</p>
+      <p>In the past, I've usually had a box plot showing the difference in compensation between, say, Bootcamp grads and Bachelor's Degree holders. After seeing several years of data, I now believe that this variation is mostly explained by experience. As time goes on, and the selection bias continues to work against bootcamp grads, I believe those that continue in their career will have comp on-par with their peers.</p>
       <div id="comp-by-edu" class="chart full"></div>
       <h3>What type of degrees do respondents have?</h3>
       <div id="degree-type" class="chart"></div>
@@ -173,7 +173,7 @@
       <div id="utah-vs-remote-pay" class="chart"></div>
       <p>Some observations:</p>
       <ul>
-        <li>Average base salary for local and remote have a very similar distribution. I imagine this will change in the coming years with the growth of remote silicon valley aka FAANG employment.</li>
+        <li>Average base salary for local and remote have a very similar distribution. I imagine this will change in the coming years with the growth of remote Silicon Valley (FAANG and others) employment.</li>
         <li>Remote jobs have a much lager spread on equity, which probably makes them very attractive.</li>
       </ul>
       <h2 id="benefits">Benefits</h2>
@@ -181,7 +181,7 @@
       <p>Respondents were asked about other benefits they thought were particularly good. Most common were:</p>
       <ul>
         <li>100% paid health insurance</li>
-        <li>"Unlimited PTO"</li>
+        <li>Unlimited PTO</li>
         <li>Flexible schedule</li>
         <li>Paid parental leave</li>
         <li>Education stipends & Reimbursements</li>
@@ -194,7 +194,7 @@
       <h3>How does receiving a raise at your current employer compare with moving to a new employer?</h3>
       <div id="raise-vs-move-box" class="chart"></div>
       <h2 id="covid-19">Covid-19</h2>
-      <p>This year I asked some questions specifically about Covid-19 and the changes in work that have happened this year.</p>
+      <p>This year I asked some questions specifically about Covid-19 and the changes in work that have happened as a result.</p>
       <h3>My job was affected by Covid-19...</h3>
       <div id="covid-changes" class="chart"></div>
       <p>Of those laid off, 6 found work (all within 1 month) and 4 are still out of work.</p>
@@ -209,7 +209,7 @@
       </ul>
       <h3>Comparison of response rates</h3>
       <div id="response-rates" class="chart"></div>
-      <p>Some meta analysis of the survey: There was some discussion of the lower response rate this year, and it's my belief that people are suffering from Covid-19 fatigue and are participating less in-general in non-essential communities (like this one).</p>
+      <p>Some meta analysis of the survey: There was some discussion of the lower response rate this year, and it's my belief that people are suffering from Covid-19 fatigue, and are participating less in non-essential communities (like this one).</p>
       <!-- <h2 id="biases">Caveats & Biases</h2>
       <p>Some of my thoughts about this survey, and on ways this survey could be improved</p>
       <h3>Response Numbers</h3>
