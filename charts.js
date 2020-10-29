@@ -1120,7 +1120,7 @@ charts.push({
       title: {
         text: 'Salary Change'
       },
-      tickInterval: 1000,
+      tickInterval: 5000,
       // plotLines: [{
       //   color: 'red', // Color value
       //   dashStyle: 'longdashdot', // Style of the plot line. Default to solid
@@ -1177,9 +1177,9 @@ charts.push({
         lineWidth: 1,
         lineColor: "rgba(255,0,0,1)"
       },
-      tooltip: {
-        pointFormat: '{point.y} Percent'
-      }
+      // tooltip: {
+      //   pointFormat: '{point.y} Percent'
+      // }
     }, {
       name: 'Outlier',
       type: 'scatter',
@@ -1192,9 +1192,9 @@ charts.push({
         lineWidth: 1,
         lineColor: "rgba(0,255,0,1)"
       },
-      tooltip: {
-        pointFormat: '{point.y} Percent'
-      }
+      // tooltip: {
+      //   pointFormat: '{point.y} Percent'
+      // }
     }
   ]}
 })
